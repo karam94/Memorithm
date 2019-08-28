@@ -5,8 +5,39 @@ html {
 }
 
 .container {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.navbar-item {
+  display: flex;
+}
+
+.navbar,
+.navbar-menu,
+.navbar-start,
+.navbar-end {
+  align-items: stretch;
+  display: flex;
+  padding: 0;
+}
+
+.navbar-menu {
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.navbar-start {
+  justify-content: flex-start;
+  margin-right: auto;
+}
+.navbar-end {
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.navbar .navbar-title {
+  color: #ffffff;
+  font-size: 26px;
 }
 
 .navbar-burger {
@@ -21,4 +52,13 @@ html {
 .navbar-burger:hover {
   background-color: rgba(0, 0, 0, 0);
   color: #ffffff;
+}
+
+.algorithm-container {
+  overflow-y: scroll;
+  padding: 20px;
+}
+
+.algorithm-container .box {
+  font-family: consolas;
 }
