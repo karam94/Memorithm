@@ -1,6 +1,24 @@
 /* user regular css can go here if preferred over sass */
 
+html {
+  background-color: #2d98da;
+}
+
 .container {
   margin-top: 40px;
   margin-bottom: 40px;
+}
+
+.navbar-burger {
+  color: #ffffff;
+}
+
+.navbar-burger span {
+  height: 2px;
+  width: 20px;
+}
+
+.navbar-burger:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: #ffffff;
 }
