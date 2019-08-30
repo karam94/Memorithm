@@ -1,0 +1,9 @@
+{
+  "name": "Memorithm",
+  "short_name": "Memorithm",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#3273dc",
+  "theme_color": "#3273dc",
+  "orientation": "portrait-primary"
+}
