@@ -25,7 +25,7 @@
       </ul>
     </div>
 
-    <draggable v-model="myArray" group="people" @start="drag=true" @end="drag=false">
+    <draggable v-model="myArray" @start="drag=true" @end="drag=false">
       <div class="box" v-for="element in myArray" :key="element.id" v-html="element.text"></div>
     </draggable>
 
