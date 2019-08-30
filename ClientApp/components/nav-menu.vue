@@ -1,16 +1,20 @@
 ﻿<template>
   <nav class="navbar has-background-link">
-    <div class="navbar-item navbar-title">
-      <div class="has-text-centered">
-        <h1>Bubble Sort</h1>
+    <div class="navbar-brand">
+      <div class="navbar-item navbar-title">
+        <div class="has-text-centered">
+          <h1>Memorithm</h1>
+        </div>
       </div>
     </div>
-  
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
+
+    <div class="navbar-end">
+      <router-link to="/">
+      <a class="navbar-item">
+        <i class="fas fa-home"></i>
+      </a>
+      </router-link>
+    </div>
   </nav>
 </template>
 
@@ -25,3 +29,10 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.fa-home {
+  font-size: 40px;
+  color: #ffffff;
+}
+</style>

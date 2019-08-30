@@ -1,17 +1,15 @@
 <template>
   <div class="content">
-    <bubble-sort></bubble-sort>
+    <router-link to="/bubblesort">
+      <a class="button is-large is-fullwidth">
+        Bubble Sort
+      </a>
+    </router-link>
   </div>
 </template>
 
 <script>
-import BubbleSort from "./bubble-sort";
-
 export default {
-
-  components: {
-    'bubble-sort': BubbleSort
-  },
 
   data() {
     return {};
@@ -19,5 +17,8 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.content {
+  padding: 20px;
+}
 </style>
