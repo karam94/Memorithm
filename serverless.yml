@@ -1,0 +1,22 @@
+service: memorithm
+
+provider:
+  name: aws
+  runtime: dotnetcore2.1
+  stage: ${opt:stage, 'dev'}
+  region: eu-west-1
+  profile: default
+
+package:
+  artifact: bin/release/netcoreapp2.1/memorithm.zip
+
+functions:
+  api:
+    handler: memorithm::memorithm.LambdaEntryPoint::FunctionHandlerAsync
+    events:
+     - http:
+         path: /{proxy+}
+         method: ANY
+
+custom:
+  stage: ${opt:stage, self:provider.stage}
