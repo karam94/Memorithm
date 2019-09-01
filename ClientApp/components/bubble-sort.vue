@@ -31,7 +31,7 @@
 
     <div class="algorithm-footer">
       <hr />
-      <a class="button is-success is-large is-rounded" @click="done()">
+      <a class="button is-success is-medium is-rounded" @click="done()">
         <span class="icon is-large">
           <i class="fas fa-thumbs-up"></i>
         </span>
@@ -40,7 +40,7 @@
 
       &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
       <a
-        class="button is-warning is-large is-rounded"
+        class="button is-warning is-medium is-rounded"
         @click="help()"
       >
         <span class="icon is-large">
