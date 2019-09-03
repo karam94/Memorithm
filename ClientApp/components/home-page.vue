@@ -12,6 +12,24 @@
         <i class="fas fa-lock"></i>
       </span>
     </a>
+
+    <br />
+
+    <a class="button is-large is-fullwidth" disabled>
+      <span>JavaScript</span>
+      <span class="icon is-large">
+        <i class="fas fa-lock"></i>
+      </span>
+    </a>
+
+    <br />
+
+    <a class="button is-large is-fullwidth" disabled>
+      <span>Python</span>
+      <span class="icon is-large">
+        <i class="fas fa-lock"></i>
+      </span>
+    </a>
   </div>
 </template>
 
