@@ -1,16 +1,22 @@
 <template>
   <div class="content">
-    <router-link to="/bubblesort">
-      <a class="button is-large is-fullwidth">
-        Bubble Sort
-      </a>
+    <router-link to="/pseudocode">
+      <a class="button is-large is-fullwidth">Pseudocode</a>
     </router-link>
+
+    <br />
+
+    <a class="button is-large is-fullwidth" disabled>
+      <span>C#</span>
+      <span class="icon is-large">
+        <i class="fas fa-lock"></i>
+      </span>
+    </a>
   </div>
 </template>
 
 <script>
 export default {
-
   data() {
     return {};
   }

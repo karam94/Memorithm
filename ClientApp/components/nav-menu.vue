@@ -10,9 +10,9 @@
 
     <div class="navbar-end">
       <router-link to="/">
-      <a class="navbar-item">
-        <i class="fas fa-home"></i>
-      </a>
+        <a class="navbar-item">
+          <i class="fas fa-home"></i>
+        </a>
       </router-link>
     </div>
   </nav>
