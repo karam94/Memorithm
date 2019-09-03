@@ -17,11 +17,14 @@
     <div class="notification is-warning" v-show="showHelp">
       <button class="delete" @click="closeModal()"></button>
       <strong>Need some help?</strong>
-      <br />
+      <br/>
+      <br/>
       <ul>
-      <li>Starting with an unsorted list, iterate through each element and compare it to the element next to it.</li>
-      <li>If the element, is greater than the element next to it, they are swapped.</li>
-      <li>This process is then repeated until we reach the end of the list. If the list is still unsorted, the Bubble Sort starts again from the start of the list.</li>
+        <li style="padding-bottom: 10px;">Starting with an unsorted list, iterate through each element and compare it to its neighbouring element.</li>
+        <li style="padding-bottom: 10px;">If the element, is greater than its neighbouring element, swap them.</li>
+        <li style="padding-bottom: 10px;">Repeated until we reach the end of the list.</li>
+        <li style="padding-bottom: 10px;">If a swap has occurred, restart the process.</li>
+        <li>If no swap has occurred, the list is sorted.</li>
       </ul>
     </div>
 
@@ -37,7 +40,6 @@
         </span>
         <span>Done!</span>
       </a>
-
       &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
       <a
         class="button is-warning is-medium is-rounded"
@@ -74,42 +76,44 @@ export default {
         { id: 1, text: "swapped = <strong>false</strong>" },
         {
           id: 2,
-          text: "for all <strong>elements</strong> of <strong>list</strong>"
+          text: "for each <strong>element</strong> of <strong>list</strong>"
         },
         {
           id: 3,
-          text: "if <strong>list[i]</strong> > <strong>[list i+1]</strong> then"
+          text: "if <strong>list[i]</strong> > <strong>list[i+1]</strong> then"
         },
         {
           id: 4,
-          text: "swap(<strong>list[i]</strong>, <strong>[list i+1]</strong>)"
+          text: "swap(<strong>list[i]</strong>, <strong>list[i+1]</strong>)"
         },
         { id: 5, text: "swapped = <strong>true</strong>" },
         { id: 6, text: "end if" },
         { id: 7, text: "end for" },
         { id: 8, text: "if swapped = <strong>false</strong>" },
-        { id: 9, text: "terminate program" }
+        { id: 9, text: "terminate program" },
+        { id: 10, text: "else repeat program" }
       ],
 
       correctArray: [
         { id: 1, text: "swapped = <strong>false</strong>" },
         {
           id: 2,
-          text: "for all <strong>elements</strong> of <strong>list</strong>"
+          text: "for each <strong>element</strong> of <strong>list</strong>"
         },
         {
           id: 3,
-          text: "if <strong>list[i]</strong> > <strong>[list i+1]</strong> then"
+          text: "if <strong>list[i]</strong> > <strong>list[i+1]</strong> then"
         },
         {
           id: 4,
-          text: "swap(<strong>list[i]</strong>, <strong>[list i+1]</strong>)"
+          text: "swap(<strong>list[i]</strong>, <strong>list[i+1]</strong>)"
         },
         { id: 5, text: "swapped = <strong>true</strong>" },
         { id: 6, text: "end if" },
         { id: 7, text: "end for" },
         { id: 8, text: "if swapped = <strong>false</strong>" },
-        { id: 9, text: "terminate program" }
+        { id: 9, text: "terminate program" },
+        { id: 10, text: "else repeat program" }
       ]
     };
   },

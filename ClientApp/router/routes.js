@@ -1,6 +1,6 @@
 import HomePage from 'components/home-page'
 import PseudoCode from 'components/pseudocode'
-import BubbleSort from 'components/bubble-sort'
+import BubbleSort from 'components/pseudocode/bubble-sort'
 
 export const routes = [
   { name: 'home', path: '/', component: HomePage, display: 'Home', icon: 'home' },

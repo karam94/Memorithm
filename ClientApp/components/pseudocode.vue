@@ -3,6 +3,12 @@
     <router-link to="/bubblesort">
       <a class="button is-large is-fullwidth">Bubble Sort</a>
     </router-link>
+
+    <br/>
+
+    <router-link to="/bubblesort">
+      <a class="button is-large is-fullwidth">Selection Sort</a>
+    </router-link>
   </div>
 </template>
 
